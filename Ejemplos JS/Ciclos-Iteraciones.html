@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>COMENTARIOS</title> <meta charset="utf-8">
+<script type="text/javascript">
+//for
+var paso;
+for (paso = 0; paso < 5; paso++) {
+  // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+  console.log('Dando un paso al Este');
+};
+//do..while
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+//while
+n = 0;
+x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+//labels
+markLoop:
+while (theMark == true) {
+   doSomething();
+}
+//break
+for (i = 0; i < a.longitud; i++) {
+  if (a[i] == elValor) {
+    break;
+  }
+}
+//continue
+i = 0;
+n = 0;
+while (i < 5) {
+  i++;
+    if (i == 3) {
+      continue;
+    }
+  n += i;
+}
+//for in
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+
+}
+//for of
+
+for (let i of arr) {
+   console.log(i); // logs "3", "5", "7"
+}
+</script>
+</head>
+<body>
+</body>
+</html>

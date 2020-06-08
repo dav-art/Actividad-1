@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>COMENTARIOS</title> <meta charset="utf-8">
+<script type="text/javascript">
+//expresiones
+var factorial = function fac(n) {return n<2 ? 1 : n*fac(n-1)};
+
+print(factorial(3));
+//llamadas
+console.log(square(5));
+/* ... */
+function square(n) { return n*n } 
+//recursividad
+var foo = function bar() {
+   // las sentencias van aqui
+};
+//clausuras
+var createPet = function(name) {  // la funcion externa define una variable llamada "name"
+  return {
+    setName: function(name) {    // la funcion encerrada tambien define una variable llamada "name"
+      name = name;               // ¿¿¿ Como accedemos la "name" definida por la funcion externa ???
+    }
+  }
+}
+//argumentos
+function myConcat(separator) {
+   var result = "", // initialize list
+       i;
+   // iterate through arguments
+   for (i = 1; i < arguments.length; i++) {
+      result += arguments[i] + separator;
+   }
+   return result;
+}
+//parametros
+function multiply(a, b) {
+  b = typeof b !== 'undefined' ?  b : 1;
+  
+  return a*b;
+}
+
+multiply(5); 
+//funciones flecha
+var a = [
+  "Hydrogen",
+  "Helium",
+  "Lithium",
+  "Beryl­lium"
+];
+
+var a2 = a.map(function(s){ return s.length });
+//predefinidas
+//eval
+eval(cadena de caracteres o string);
+//isfinite
+isFinite(number);
+//isNAN
+isNaN(testValue);
+//parseint o parsefloat
+parseFloat(str);
+parseInt(str [, radix]);
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>COMENTARIOS</title> <meta charset="utf-8">
+<script type="text/javascript">
+//llenando un array
+var emp = [];
+emp[0] = "Casey Jones";
+emp[1] = "Phil Lesh";
+emp[2] = "August West";
+//referencia a elementos array
+var myArray = ["Wind", "Rain", "Fire"];
+//iterando arrays
+var colors = ['red', 'green', 'blue'];
+for (var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+//array methods
+var myArray = new Array("1", "2", "3");
+myArray = myArray.concat("a", "b", "c"); 
+// myArray is now ["1", "2", "3", "a", "b", "c"]
+//arraymultidimencional
+var a = new Array(4);
+for (i = 0; i < 4; i++) {
+  a[i] = new Array(4);
+  for (j = 0; j < 4; j++) {
+    a[i][j] = "[" + i + "," + j + "]";
+  }
+}
+//maps
+var miMapa = new Map();
+
+var claveObj = {},
+    claveFunc = function () {},
+    claveCadena = "una cadena";
+//set
+const mySet = new Set();
+mySet.add(1);
+mySet.add(5);
+mySet.add('some text');
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>COMENTARIOS</title> <meta charset="utf-8">
+<script type="text/javascript">
+//aritmeticos
+5 - 3    
+1 + 2 
+1 / 2 
+2 * 2 
+12 % 5 
+//relaciones
+//in
+0 in arboles
+//instaceof
+color1=new String("verde")
+color1 instanceof String
+//menor que
+3 < 4
+//mayor que
+3 > 4
+//menorigual
+3 <= 4
+//mayorigual
+3 >= 4
+//logicos
+a1 = true  && true
+o1 = true  || true  
+n1 = !true      
+//asignacion
+//basica
+const foo = ['uno', 'dos', 'tres'];
+//separada de declaracion
+let a, b;
+
+[a, b] = [1, 2];
+console.log(a); // 1
+console.log(b); // 2
+//valores predeterminados
+let a, b;
+
+[a=5, b=7] = [1];
+console.log(a); // 1
+console.log(b); // 7
+//intercambio variables
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+//multiples valores
+function f() {
+  return [1, 2];
+}
+
+let a, b; 
+[a, b] = f();
+
+console.log(a); // 1
+console.log(b); // 2
+//ignorando valores
+function f() {
+  return [1, 2, 3];
+}
+
+const [a, , b] = f();
+console.log(a); // 1
+console.log(b); // 3
+//asignacion del resto de un array
+const [a, ...b] = [1, 2, 3];
+console.log(a); // 1
+console.log(b); // [2, 3]
+//extrayendo valores de una expresion
+const parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+const [, protocol, fullhost, fullpath] = parsedURL;
+
+console.log(protocol); // https:
+
+
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
